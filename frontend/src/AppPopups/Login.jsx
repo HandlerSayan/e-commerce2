@@ -20,7 +20,7 @@ export const Login = () => {
  const login = async ()=>{
   console.log("login executed",formData)
   let resData;
-  await fetch('http://localhost:4000/login',{
+  await fetch('https://e-commerce2-puce.vercel.app/login',{
     method:'POST',
     headers:{
       Accept:'application/from-data',
@@ -42,7 +42,7 @@ export const Login = () => {
  const signUp = async ()=>{
   console.log("sign executed",formData)
   let resData;
-  await fetch('http://localhost:4000/signup',{
+  await fetch('https://e-commerce2-puce.vercel.app/signup',{
     method:'POST',
     headers:{
       Accept:'application/from-data',

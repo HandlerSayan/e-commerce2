@@ -8,7 +8,7 @@ import { Items } from '../Items/Items'
 export const Famous = () => {
   const [trending,setTrending] = useState([])
   useEffect(()=>{
-  fetch('http://localhost:4000/trending')
+  fetch('https://e-commerce2-puce.vercel.app/trending')
   .then((res)=>res.json())
   .then((data)=>setTrending(data))
   },[])

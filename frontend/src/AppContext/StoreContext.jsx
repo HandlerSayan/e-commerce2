@@ -21,12 +21,12 @@ const StoreContextProvider = (props)=>{
 
 
      useEffect(()=>{
-      fetch('http://localhost:4000/allproducts')
+      fetch('https://e-commerce2-puce.vercel.app/allproducts')
       .then((res)=>res.json())
       .then((data)=>setAll_product(data))
 
       if(localStorage.getItem('auth-token')){
-        fetch('http://localhost:4000/getcart',{
+        fetch('https://e-commerce2-puce.vercel.app/getcart',{
           method:'POST',
           headers:{
             Accept:'application/form-data',
@@ -48,7 +48,7 @@ const StoreContextProvider = (props)=>{
     const addToCart = (itemId)=>{
        setCartItems((previous)=>({...previous,[itemId]:previous[itemId]+1}))
        if(localStorage.getItem('auth-token')){
-        fetch('http://localhost:4000/addtocart',{
+        fetch('https://e-commerce2-puce.vercel.app/addtocart',{
           method:'POST',
           headers:{
             Accept:'application/form-data',
@@ -67,7 +67,7 @@ const StoreContextProvider = (props)=>{
     const removeFromCart = (itemId)=>{
         setCartItems((previous)=>({...previous,[itemId]:previous[itemId]-1}))
         if(localStorage.getItem('auth-token')){
-          fetch('http://localhost:4000/removefromcart',{
+          fetch('https://e-commerce2-puce.vercel.app/removefromcart',{
           method:'POST',
           headers:{
             Accept:'application/form-data',
