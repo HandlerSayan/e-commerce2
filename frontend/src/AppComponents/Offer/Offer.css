@@ -1,0 +1,134 @@
+.offers{
+    border: none;
+    width:60%;
+    height:60vh;
+    display: flex;
+    margin: auto;
+    padding: 0px 135px;
+    margin-bottom: 150px;
+    background: rgb(199, 184, 184);
+}
+
+.left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+}
+
+.left h1{
+    color: rgb(9, 9, 9);
+    font-size: 35px;
+    font-weight: 400;
+}
+.left p{
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.left button{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    background: rgb(195, 117, 117);
+    border: none;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 20px;
+    
+    cursor: pointer;
+    /* padding-top: 40px;
+    margin-top: 20px; */
+
+}
+
+button:hover{
+    background: rgb(186, 141, 141); 
+}
+
+.right{
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    
+}
+.right img{
+    padding-left: 80px;
+    width: 200px;
+    height: 250px;
+}
+
+
+
+/* For a maximum width of 650px */
+@media(max-width: 500px) {
+    .offers {
+         width: auto;
+         padding: 0px 20px;
+     }
+ 
+    .left {
+         text-align: flex-start;
+         padding: 0px 10px;
+     }
+ 
+    .left h1 {
+         font-size: 25px;
+     }
+ 
+    .left p {
+         font-size: 16px;
+     }
+ 
+    .left button {
+         width: 120px;
+         height: 40px;
+         font-size: 16px;
+     }
+ 
+    .right img {
+         padding-right: 20px;
+         width: 60%;
+         height: 60%;
+         /* width: 90px;
+         height: 90px; */
+     }
+ }
+ 
+ /* For a maximum width of 750px */
+ @media (max-width: 750px) {
+    .offers {
+         width: auto;
+         padding: 0px 50px;
+     }
+ 
+    .left {
+         text-align: center;
+         padding: 0px 50px;
+     }
+ 
+    .left h1 {
+         font-size: 30px;
+     }
+ 
+    .left p {
+         font-size: 18px;
+     }
+ 
+    .left button {
+         width: 140px;
+         height: 45px;
+         font-size: 18px;
+     }
+ 
+    .right img {
+         padding-left: 50px;
+         width: 200px;
+         height: 240px;
+     }
+ }

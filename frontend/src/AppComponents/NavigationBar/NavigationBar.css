@@ -1,0 +1,210 @@
+html{
+    font-family: sans-serif;
+    background-color: white;
+    min-height: 100vw;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* body{
+    margin: 0;
+    background-color: white;
+    border: 1px solid rgb(169, 167, 167);
+} */
+
+
+.navigationbar{
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(32, 31, 31);
+}
+
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigationbar .navbar-logo img{
+    margin-left: 20px;
+    height: 60px;
+    width: 60px;
+    border: none;
+}
+
+.navbar-logo .title{
+    color: white;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.navigationbar .navbar-tabs{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 400;
+    list-style: none;
+    font-size: 15px;
+}
+
+.navigationbar .navbar-tabs li{
+    color: rgb(172, 38, 38);
+    border-radius: 15px;
+    padding: 15px 35px;
+    background-color: rgb(55, 53, 53);
+    text-align: center;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.navigationbar .navbar-tabs li:hover{
+    transform: scale(1.2);
+}
+
+.navigationbar .navbar-tabs li:hover{
+    background-color:rgb(32, 31, 31);
+}
+
+.navigationbar .navbar-tabs li.active{
+    background-color: rgb(32, 31, 31);
+}
+
+.navbar-cart{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-cart button{
+    width: 90px;
+    height: 40px;
+    outline: none;
+    border: 2px solid wheat;
+    border-radius: 72px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.navbar-cart button:hover{
+    background-color: rgba(255, 255, 255, 0.689);
+}
+.navbar-cart img{
+    margin-right: 45px;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    /* border-radius: 50%; */
+    /* border: 2px solid whitesmoke; */
+}
+
+.cart-count{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  margin-left: -70px;
+  margin-right: 20px;
+  font-size: 20px;
+  background-color: rgb(85, 158, 3);
+  color: whitesmoke;
+}
+
+
+@media(max-width: 900px) {
+    .navigationbar {
+        height: auto;
+        justify-content: space-between;
+    }
+    .navbar-logo {
+        justify-content: center;
+    }
+    .navbar-tabs {
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .navbar-cart {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .navbar-cart button {
+        justify-content: space-around;
+        width: 70px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .navbar-cart img {
+        height: 40px;
+        width: 40px;
+    }
+    .cart-count {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+    }
+}
+
+
+
+@media(max-width: 750px){
+    .navigationbar{
+        width: auto;
+         height: auto;
+         justify-content: space-between;
+     }
+    .navbar-logo{
+         justify-content: center;
+     }
+    .navbar-tabs{
+         flex-direction: column;
+         align-items: center;
+         margin-top: 20px;
+     }
+    .navbar-cart{
+         justify-content: center;
+         margin-top: 20px;
+     }
+ }
+
+ @media(max-width: 650px){
+    .navigationbar{
+         width: auto;
+         height: auto;
+         flex-direction: column;
+     }
+    .navbar-logo{
+        margin-top: 5px;
+         justify-content: center;
+     }
+    .navbar-tabs{
+         flex-direction: column;
+         align-items: center;
+         margin-top: 20px;
+     }
+    .navbar-cart{
+         justify-content: center;
+         margin-top: 20px;
+     }
+    .navbar-cart button{
+         width: 70px;
+         height: 30px;
+         font-size: 15px;
+     }
+    .navbar-cart img{
+         height: 40px;
+         width: 40px;
+     }
+    .cart-count{
+         width: 25px;
+         height: 25px;
+         font-size: 15px;
+     }
+ }

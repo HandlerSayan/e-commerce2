@@ -1,0 +1,78 @@
+.famous{
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+}
+
+.famous h1{ 
+    color: black;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.famous hr{
+    width: 300px;
+    height: 10px;
+    border-radius: 20px;
+    background: rgb(59, 54, 54);
+    box-shadow: -2px 2px 2px rgb(154, 255, 4);
+}
+
+.famous-item{
+    display: flex;
+    gap: 50px;
+    margin-top:20px;
+
+}
+
+
+@media (max-width: 750px) {
+    .famous {
+        padding-top: 10px;
+        padding-bottom: 20px;
+         margin-top: 100px;
+         gap: 25px;
+     }
+ 
+    .famous h1 {
+         font-size: 40px;
+     }
+ 
+    .famous hr {
+         width: 250px;
+         height: 8px;
+         border-radius: 15px;
+     }
+ 
+    .famous-item {
+         gap: 25px;
+         margin-top: 15px;
+     }
+ }
+ 
+ /* Maximum width of 650px (already exists in the context) */
+ @media (max-width: 650px) {
+    .famous {
+         padding-bottom: 250px;
+     }
+ 
+    .famous h1 {
+         font-size: 25px;
+     }
+ 
+    .famous hr {
+         width: 60px;
+         height: 3px;
+     }
+ 
+    .famous-item {
+         height: 10px;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         grid-gap: 50px;
+     }
+ }

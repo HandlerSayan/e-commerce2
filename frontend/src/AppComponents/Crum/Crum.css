@@ -1,0 +1,11 @@
+.crum{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #595353;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 58px 135px;
+    text-transform: capitalize;
+
+}
