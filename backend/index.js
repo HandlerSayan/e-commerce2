@@ -13,7 +13,13 @@ const stripe = require("stripe")(
 const port = 4000; //using port 4000
 
 //MIDDLEWARES
-app.use(cors());
+app.use(cors(
+  {
+    origin:["https://e-commerce2-frontend.vercel.app"],
+    methods: ["POST","GET"],
+    credentials: true
+  }
+));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // mongoose.pluralize(null);
